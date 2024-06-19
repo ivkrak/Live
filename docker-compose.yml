@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "4567:80"
+    volumes:
+      - ./assets:/usr/share/nginx/html/assets
+      - ./index.html:/usr/share/nginx/html/index.html
+
