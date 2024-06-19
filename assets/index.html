@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+   <title>GameSStore</title>
+</head>
+<body>
+    <header>
+        <h1>GameSStore</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="html/category.html">Категории</a>
+        <a href="#" id="cart-link">Корзина (<span id="cart-count">0</span>)<a>
+    </nav>
+    <div class="gamescontainer">
+        <div class="game">
+            <h3>battlefield</h3>
+            <img src="assets/батлаjpg.jpg" alt="battlefield">
+            <p>Цена: $5.99</p>
+            <p>дерись ,побежай.</p>
+        <button onclick="addToCart('Battlefield', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>farcry3</h3>
+            <img src="assets/farcry3.jpg" alt="portal2">
+            <p>Цена: $100</p>
+            <p>встреться с злодеем.</p>
+            <button onclick="addToCart('farcry3', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>battlefield</h3>
+            <img src="assets/батлаjpg.jpg" alt="battlefield">
+            <p>дерись ,побежай.</p>
+            <button onclick="addToCart('Battlefield', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>farcry3</h3>
+            <img src="assets/farcry3.jpg" alt="portal2">
+            <p>встреться с злодеем.</p>
+            <button onclick="addToCart('farcry3', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>battlefield</h3>
+            <img src="assets/батлаjpg.jpg" alt="battlefield">
+            <p>дерись ,побежай.</p>
+            <button onclick="addToCart('Battlefield', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>farcry3</h3>
+            <img src="assets/farcry3.jpg" alt="portal2">
+            <p>встреться с злодеем.</p>
+            <button onclick="addToCart('farcry3', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>battlefield</h3>
+            <img src="assets/батлаjpg.jpg" alt="battlefield">
+            <p>дерись ,побежай.</p>
+            <button onclick="addToCart('Battlefield', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>farcry3</h3>
+            <img src="assets/farcry3.jpg" alt="portal2">
+            <p>встреться с злодеем.</p>
+            <button onclick="addToCart('farcry3', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>battlefield</h3>
+            <img src="assets/батлаjpg.jpg" alt="battlefield">
+            <p>дерись ,побежай.</p>
+            <button onclick="addToCart('Battlefield', 10)">Добавить в корзину</button>
+
+        </div>
+        <div class="game">
+            <h3>farcry3</h3>
+            <img src="assets/farcry3.jpg" alt="portal2">
+            <p>встреться с злодеем.</p>
+            <button onclick="addToCart('farcry3', 10)">Добавить в корзину</button>
+        </div>
+        <div class="game">
+            <h3>battlefield</h3>
+            <img src="assets/батлаjpg.jpg" alt="battlefield">
+            <p>дерись ,побежай.</p>
+            <button onclick="addToCart('Battlefield', 10)">Добавить в корзину</button>
+
+        </div>
+        <div class="game">
+            <h3>farcry3</h3>
+            <img src="assets/farcry3.jpg" alt="portal2">
+            <p>встреться с злодеем.</p>
+            <button onclick="addToCart('farcry3', 10)">Добавить в корзину</button>
+        </div>                                                               
+    </div>
+    <div  id="cart-container" style="display: none;">
+        <h2>Корзина</h2>
+        <div id=cart-items></div>
+            <p>Общая сумма: $<span id="total-price">0</span> </p>
+        </div>
+    <script src="js/script.js"></script>
+<body>                                                                                                                                                                                                                                                                                                      
+</html>
