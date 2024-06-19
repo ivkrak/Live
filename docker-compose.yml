@@ -6,4 +6,6 @@ services:
     volumes:
       - ./assets:/usr/share/nginx/html/assets
       - ./index.html:/usr/share/nginx/html/index.html
-
+      - ./html:/usr/share/nginx/html/html
+      - ./css:/usr/share/nginx/html/css
+      - ./js:/usr/share/nginx/html/js
