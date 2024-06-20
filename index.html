@@ -13,15 +13,15 @@
     <nav>
         <a href="index.html">Главная</a>
         <a href="html/category.html">Категории</a>
-        <a href="#" id="cart-link">Корзина (<span id="cart-count">0</span>)</a>
+        <a href="html/cart.html">Корзина</a>
     </nav>
     <div class="gamescontainer">
         <div class="game">
-            <h3>Far cry3</h3>
+            <h3>Far cry 3</h3>
             <img src="assets/farcry3.jpg" alt="farcry3">
             <p>Цена: $299 </p>
             <p>крутая игра с легендарным злодеем </p>
-           <button onclick="addToCart('Far cry3', 299)">Добавить в козину</button>
+           <button onclick="addToCart('Far cry 3', 299)">Добавить в козину</button>
         </div>
         <div class="game">
             <h3>Doom</h3>
@@ -59,18 +59,5 @@
             <button onclick="addToCart('киберпанк', 699)">Добавить в козину</button>
        
     </div>
-    <div id="cart-container" style="display: none;">
-        <h2>Корзина</h2>
-        <div id="cart-items"></div>
-        <p>Общая сумма: $<span id="total-price">0</span></p>
-        <button onclick="clearCart()">Очистить корзину</button>
-        <form id="checkout-form" onsubmit="redirectToPayment(event)">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Оплатить</button>
-        </form>
-    </div>
-
-    <script src="js/script.js"></script>
 </body>
 </html>

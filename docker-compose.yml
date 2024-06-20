@@ -4,10 +4,5 @@ services:
     ports:
       - "4567:80"
     volumes:
-      - ./assets:/usr/share/nginx/html/assets
-      - ./html/index.html:/usr/share/nginx/html/index.html
-      - ./html:/usr/share/nginx/html/html
-      - ./css:/usr/share/nginx/html/css
-      - ./js:/usr/share/nginx/html/js
+      - .:/usr/share/nginx/html/
     command: /bin/sh -c "cp /usr/share/nginx/html/index.html /usr/share/nginx/html/index.html.bak && rm -f /usr/share/nginx/html/index.html && cp /usr/share/nginx/html/index.html.bak /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"
-
